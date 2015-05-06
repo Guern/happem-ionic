@@ -1,0 +1,14 @@
+####################################
+# Happem project - .gitignore file #
+####################################
+#
+# Put here all files to be ignored
+
+# node modules
+node_modules
+
+# platforms
+platforms
+
+# log files
+*.log

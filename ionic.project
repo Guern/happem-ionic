@@ -1,0 +1,12 @@
+{
+  "name": "happem-demo",
+  "app_id": "6430d4d3",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}
