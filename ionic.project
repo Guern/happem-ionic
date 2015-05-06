@@ -1,5 +1,5 @@
 {
-  "name": "happem-demo",
+  "name": "happem-ionic",
   "app_id": "6430d4d3",
   "gulpStartupTasks": [
     "sass",

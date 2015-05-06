@@ -1,7 +1,7 @@
 {
-  "name": "happem-demo",
+  "name": "happem-ionic",
   "version": "1.0.0",
-  "description": "happem-demo: An Ionic project",
+  "description": "happem-ionic: An Ionic project",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^1.3.3",

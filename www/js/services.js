@@ -47,4 +47,53 @@ angular.module('starter.services', [])
       return null;
     }
   };
+})
+
+.factory('Events', function() {
+  // Might use a resource here that returns a JSON array
+
+  // Some fake testing data
+  var events = [{
+    id: 0,
+    name: 'Happy hours',
+    lastText: 'You on your way?',
+    where: 'San Salvario'
+  }, {
+    id: 1,
+    name: 'AperiGiraudo',
+    lastText: 'Hey, it\'s me',
+    where: 'Quadrilatero'
+  }, {
+    id: 2,
+    name: 'Speed date',
+    lastText: 'Did you get the ice cream?',
+    where: 'Piazza Vittorio'
+  }, {
+    id: 3,
+    name: 'Concerto di Adam Bradleyson',
+    lastText: 'I should buy a boat',
+    where: 'Murazzi'
+  }, {
+    id: 4,
+    name: 'Abbracci al Mazzaretto',
+    lastText: 'Look at my mukluks!',
+    where: 'k-house'
+  }];
+
+  return {
+    all: function() {
+      return events;
+    },
+    remove: function(event) {
+      events.splice(events.indexOf(event), 1);
+    },
+    get: function(eventId) {
+      for (var i = 0; i < events.length; i++) {
+        if (events[i].id === parseInt(eventId)) {
+          return events[i];
+        }
+      }
+      return null;
+    }
+  };
 });

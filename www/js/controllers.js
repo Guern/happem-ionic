@@ -3,9 +3,9 @@ angular.module('starter.controllers', [])
 .controller('MapCtrl', [ "$scope", function($scope) {
     angular.extend($scope, {
         turin: {
-            lat: 45.0667,
-            lng: 7.7000,
-            zoom: 11
+            lat: 45.0567,
+            lng: 7.6600,
+            zoom: 12
         },
         center: {
             autoDiscover: true
