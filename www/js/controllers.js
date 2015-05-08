@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('MapCtrl', [ "$scope", function($scope) {
+.controller('MapCtrl', [ "$scope", function($scope, Events) {
     angular.extend($scope, {
         turin: {
             lat: 45.0567,
@@ -11,6 +11,15 @@ angular.module('starter.controllers', [])
             autoDiscover: true
         }
     });
+
+    $scope.mapHeight = "580px";
+
+    //leafletdata.getMap().then(function(map) {
+
+    // Add events
+    for (var i in Events.all()) {
+
+    }
 }])
 
 .controller('DashCtrl', function($scope) {})

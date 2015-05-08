@@ -57,27 +57,47 @@ angular.module('starter.services', [])
     id: 0,
     name: 'Happy hours',
     lastText: 'You on your way?',
-    where: 'San Salvario'
+    where: 'San Salvario',
+    coords: {
+        lat: 45.0567,
+        lng: 7.6600
+    }
   }, {
     id: 1,
     name: 'AperiGiraudo',
     lastText: 'Hey, it\'s me',
-    where: 'Quadrilatero'
+    where: 'Quadrilatero',
+    coords: {
+        lat: 45.0568,
+        lng: 7.6601
+    }
   }, {
     id: 2,
     name: 'Speed date',
     lastText: 'Did you get the ice cream?',
-    where: 'Piazza Vittorio'
+    where: 'Piazza Vittorio',
+    coords: {
+        lat: 45.0569,
+        lng: 7.6602
+    }
   }, {
     id: 3,
     name: 'Concerto di Adam Bradleyson',
     lastText: 'I should buy a boat',
-    where: 'Murazzi'
+    where: 'Murazzi',
+    coords: {
+        lat: 45.0557,
+        lng: 7.6595
+    }
   }, {
     id: 4,
     name: 'Abbracci al Mazzaretto',
     lastText: 'Look at my mukluks!',
-    where: 'k-house'
+    where: 'k-house',
+    coords: {
+        lat: 45.0559,
+        lng: 7.6604
+    }
   }];
 
   return {
