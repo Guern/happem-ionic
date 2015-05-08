@@ -52,55 +52,69 @@ angular.module('starter.services', [])
 .factory('Events', function() {
   // Might use a resource here that returns a JSON array
 
+  var eventIcon = L.icon({
+      iconUrl: 'img/brontosaurus-icon.png',
+      iconSize:     [38, 40], // size of the icon
+      popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+  });
+
   // Some fake testing data
   var events = [{
     id: 0,
     name: 'Happy hours',
     lastText: 'You on your way?',
     where: 'San Salvario',
-    coords: {
-        lat: 45.0567,
-        lng: 7.6600
-    }
+    place: 'http://media-cdn.tripadvisor.com/media/photo-s/02/6c/f4/ac/kings-club.jpg',
+    coords: [
+        45.0567,
+        7.6800
+    ]
   }, {
     id: 1,
     name: 'AperiGiraudo',
     lastText: 'Hey, it\'s me',
     where: 'Quadrilatero',
-    coords: {
-        lat: 45.0568,
-        lng: 7.6601
-    }
+    place: 'http://cdn.utrechtyourway.nl/sites/default/files/imagecache/tut_location_type_header/ckfinder/images/Club%20Lux_0.jpg',
+    coords: [
+        45.0398,
+        7.6601
+    ]
   }, {
     id: 2,
     name: 'Speed date',
     lastText: 'Did you get the ice cream?',
     where: 'Piazza Vittorio',
-    coords: {
-        lat: 45.0569,
-        lng: 7.6602
-    }
+    place: 'http://www.primacoustic.com/pics/broadway/night-club.jpg',
+    coords: [
+        45.0769,
+        7.6602
+    ]
   }, {
     id: 3,
     name: 'Concerto di Adam Bradleyson',
     lastText: 'I should buy a boat',
     where: 'Murazzi',
-    coords: {
-        lat: 45.0557,
-        lng: 7.6595
-    }
+    place: 'http://thisisboise.com/wp-content/uploads/2013/08/Bar-and-Club_Guide.png',
+    coords: [
+        45.0557,
+        7.6395
+    ]
   }, {
     id: 4,
     name: 'Abbracci al Mazzaretto',
-    lastText: 'Look at my mukluks!',
+    lastText: 'Ma c-c-c-come fai a non abbracciarmi? Sinceramente.',
     where: 'k-house',
-    coords: {
-        lat: 45.0559,
-        lng: 7.6604
-    }
+    place: 'http://www.haisentito.it/img/orsacchiotto.jpg',
+    coords: [
+        45.0599,
+        7.6604
+    ]
   }];
 
   return {
+    getIcon: function() {
+      return eventIcon;
+    },
     all: function() {
       return events;
     },
